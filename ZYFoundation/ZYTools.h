@@ -31,8 +31,28 @@
 #define IsIOS8 (IOS_VERSION >=8.0 && IOS_VERSION < 9.0)
 //Log
 #ifdef DEBUG
-#define ZYLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#define ZYLog(...)
 #define NSLog(...)
+#endif
+
+#ifdef DEBUG
+#define ULog(fmt, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show]; }
+#else
+#define ULog(...)
+#endif
+//Resource
+#define IMAGE_NAMED(name) [UIImage imageNamed:name]
+//Class
+#ifndef SINGLETON_GCD
+#define SINGLETON_GCD(classname)                        \
+\
++ (classname *)shared##classname {                      \
+\
+static dispatch_once_t pred;                        \
+__strong static classname * shared##classname = nil;\
+dispatch_once( &pred, ^{                            \
+shared##classname = [[self alloc] init]; });    \
+return shared##classname;                           \
+}
 #endif
