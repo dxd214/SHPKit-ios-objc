@@ -29,3 +29,9 @@
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 #define IsIOS7 (IOS_VERSION >=7.0 && IOS_VERSION < 8.0)
 #define IsIOS8 (IOS_VERSION >=8.0 && IOS_VERSION < 9.0)
+//Log
+#ifdef DEBUG
+#define ZYLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define ZYLog(...)
+#endif

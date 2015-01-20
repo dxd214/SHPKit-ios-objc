@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZYUIKit.h"
 
 @interface UIViewController (ZYTools)
 

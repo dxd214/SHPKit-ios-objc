@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ZYFoundation.h"
 
 @interface NSString (ZYUrlTools)
 

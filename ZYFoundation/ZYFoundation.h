@@ -9,6 +9,8 @@
 #ifndef uwu_ZYFoundation_h
 #define uwu_ZYFoundation_h
 
+#import <Foundation/Foundation.h>
+
 #import "ZYTools.h"
 #import "ZYDeviceHelper.h"
 #import "ZYVersionHelper.h"

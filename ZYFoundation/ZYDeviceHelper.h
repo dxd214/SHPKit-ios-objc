@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Yicheng Tech. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ZYFoundation.h"
 //Device
 #define DEVICE_LIKE_IPHONE_4S           ([[UIScreen mainScreen] bounds].size.height <= 480)
 #define DEVICE_LIKE_IPHONE_5            (([[UIScreen mainScreen] bounds].size.height > 480) && ([[UIScreen mainScreen] bounds].size.height <= 568))
