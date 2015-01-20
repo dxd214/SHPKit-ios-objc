@@ -10,7 +10,18 @@
 
 @interface UIViewController (ZYTools)
 
+/**
+ * @brief 退出当前视图
+ *
+ * 如果当前在UINavigationController中则pop，否则dismiss
+ */
 - (void)pop;
+
+/**
+ * @brief 退出当前视图
+ *
+ * 直接dismiss
+ */
 - (void)dismiss;
 
 @end
