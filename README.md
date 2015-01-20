@@ -1,4 +1,4 @@
 # ZYKit
-## A iOS library written for my self
+## A iOS library may be useful
 
-It's supposed to update in spare time, Hope to be useful.
+It's supposed to update in spare time.
