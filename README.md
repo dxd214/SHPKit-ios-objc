@@ -1,4 +1,2 @@
 # ZYKit
-## A iOS library may be useful
-
-It's supposed to update in spare time.
+## 对Cocoa的自用封装，会不断完善
