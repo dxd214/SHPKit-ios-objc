@@ -57,7 +57,14 @@ typedef void(^CancelBlock)();
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
                                                         message:alertText
                                                        delegate:sharedAlertView
-                                              cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil];
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:nil];
+    for (NSString *buttonTitle in buttonTitles){
+        if (!buttonTitle.length){
+            continue;
+        }
+        [alertView addButtonWithTitle:buttonTitle];
+    }
     if (cancelTitle.length){
         
     }
