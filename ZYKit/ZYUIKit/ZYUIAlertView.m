@@ -11,7 +11,7 @@
 typedef void(^CompletionBlock)(NSInteger selectedIndex);
 typedef void(^CancelBlock)();
 
-@interface ZYUIAlertView()
+@interface ZYUIAlertView() <UIAlertViewDelegate>
 @property (strong, nonatomic) CompletionBlock completionBlock;
 @property (strong, nonatomic) CancelBlock cancelBlock;
 @end
@@ -67,8 +67,15 @@ typedef void(^CancelBlock)();
         [alertView addButtonWithTitle:buttonTitle];
     }
     if (cancelTitle.length){
-        
+        [alertView addButtonWithTitle:cancelTitle];
     }
+    [alertView show];
+}
+
+#pragma mark - UIAlertView delegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
 }
 
 @end
