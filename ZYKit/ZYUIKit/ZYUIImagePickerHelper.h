@@ -7,6 +7,7 @@
 //
 
 #import "ZYFoundation.h"
+#import "ZYUIKit.h"
 
 typedef enum{
     ZYUIImagePickerTypeCamera,
