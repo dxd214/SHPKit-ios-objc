@@ -10,4 +10,20 @@
 
 @implementation ZYUIAlertView
 
++ (void)showAlertViewWithText:(NSString *)alertText{
+    
+}
+
++ (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void (^)())completionBlock{
+
+}
+
++ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
+
+}
+
++ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
+    
+}
+
 @end

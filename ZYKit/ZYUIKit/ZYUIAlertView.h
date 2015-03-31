@@ -10,8 +10,25 @@
 
 @interface ZYUIAlertView : NSObject
 
+/**
+ * 显示一个文字提示，只包含默认的确定按钮
+ */
 + (void)showAlertViewWithText:(NSString *)alertText;
-+ (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void(^)())completion;
+
+/**
+ * 显示一个文字提示，包含默认的确定按钮，通过completionBlock回调点击事件
+ */
++ (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void(^)())completionBlock;
+
+/**
+ * 显示一个文字提示，包含可选的按钮标题，不包含取消按钮，通过completionBlock回调点击事件
+ */
++ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void(^)(NSInteger selectedIndex))completionBlock;
+
+/**
+ * 显示一个文字提示，包含可选的按钮标题，和自定义的取消按钮标题，通过completionBlock和cancelBlock回调点击事件和取消事件
+ */
++ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void(^)(NSInteger selectedIndex))completionBlock cancelBlock:(void(^)())cancelBlock;
 
 
 @end
