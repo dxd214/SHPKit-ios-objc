@@ -8,20 +8,18 @@
 
 #import "ZYUIAlertView.h"
 
-typedef void(^EmptyCompletionBlock)();
 typedef void(^CompletionBlock)(NSInteger selectedIndex);
 typedef void(^CancelBlock)();
 
 @interface ZYUIAlertView()
 @property (strong, nonatomic) CompletionBlock completionBlock;
-@property (strong, nonatomic) EmptyCompletionBlock emptyCompletionBlock;
 @property (strong, nonatomic) CancelBlock cancelBlock;
 @end
 
 @implementation ZYUIAlertView
 
 + (id)sharedAlertView {
-    static ZYUIImagePicker *_sharedAlertView = nil;
+    static ZYUIAlertView *_sharedAlertView = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedAlertView = [[self alloc] init];
@@ -47,6 +45,13 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
+    ZYUIAlertView *sharedAlertView = [self sharedAlertView];
+    sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
+        completionBlock(selectedIndex);
+    };
+    sharedAlertView.cancelBlock = ^(){
+        cancelBlock();
+    };
     
 }
 
