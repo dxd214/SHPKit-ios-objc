@@ -8,10 +8,19 @@
 
 #import "ZYUIAlertView.h"
 
+@interface ZYUIAlertView()
+
+@end
+
 @implementation ZYUIAlertView
 
 + (void)showAlertViewWithText:(NSString *)alertText{
-    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:alertText
+                                                       delegate:nil
+                                              cancelButtonTitle:@"确定"
+                                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void (^)())completionBlock{

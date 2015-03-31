@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 刘子洋. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ZYUIKit.h"
 
 @interface ZYUIAlertView : NSObject
 
