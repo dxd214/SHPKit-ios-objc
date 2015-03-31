@@ -14,6 +14,5 @@
 #import "ZYTools.h"
 #import "ZYDeviceHelper.h"
 #import "ZYVersionHelper.h"
-#import "NSString+ZYUrlTools.h"
 
 #endif
