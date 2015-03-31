@@ -28,29 +28,45 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText{
-    [self showAlertViewWithText:alertText
-                completionBlock:^(){
-                }];
+//    [self showAlertViewWithText:alertText
+//                completionBlock:^(){
+//                }];
 }
 
-
-+ (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void (^)())completionBlock{
-    [self showAlertViewWithText:alertText
-                   buttonTitles:@[@"确定"]
-                completionBlock:^(NSInteger selectedIndex) {
-                    completionBlock();
-                }];
++ (void)showAlertViewWithTitle:(NSString *)title Text:(NSString *)alertText{
+    [self showAlertViewWithTitle:title
+                            text:alertText
+                 completionBlock:^(NSInteger selectedIndex) {
+                     
+                 }];
 }
 
-+ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
-    [self showAlertViewWithText:alertText
-                   buttonTitles:buttonTitles
-                withCancelTitle:nil
-                completionBlock:completionBlock
-                    cancelBlock:nil];
++ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText completionBlock:(void (^)())completionBlock{
+//    [self showAlertViewWithText:alertText
+//                   buttonTitles:@[@"确定"]
+//                completionBlock:^(NSInteger selectedIndex) {
+//                    completionBlock();
+//                }];
+    [self showAlertViewWithTitle:title
+                            text:alertText
+                    buttonTitles:@[@"确定"]
+                 completionBlock:^(NSInteger selectedIndex) {
+                     completionBlock();
+                 }];
 }
 
-+ (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
++ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
+    [self showAlertViewWithTitle:title
+                            text:alertText
+                    buttonTitles:buttonTitles
+                 withCancelTitle:nil
+                 completionBlock:completionBlock
+                     cancelBlock:^{
+                     }];
+    
+}
+
++ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
     ZYUIAlertView *sharedAlertView = [self sharedAlertView];
     sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
         completionBlock(selectedIndex);
@@ -58,7 +74,7 @@ typedef void(^CancelBlock)();
     sharedAlertView.cancelBlock = ^(){
         cancelBlock();
     };
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
                                                         message:alertText
                                                        delegate:sharedAlertView
                                               cancelButtonTitle:nil
