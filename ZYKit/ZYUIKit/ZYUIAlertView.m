@@ -31,6 +31,7 @@ typedef void(^CancelBlock)();
     [self showAlertViewWithText:alertText completionBlock:nil];
 }
 
+
 + (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void (^)())completionBlock{
     [self showAlertViewWithText:alertText buttonTitles:@[@"确定"] completionBlock:^(NSInteger selectedIndex) {
         completionBlock();
