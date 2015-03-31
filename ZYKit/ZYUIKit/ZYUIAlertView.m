@@ -8,6 +8,10 @@
 
 #import "ZYUIAlertView.h"
 
+typedef void(^EmptyCompletionBlock)();
+typedef void(^CompletionBlock)(NSInteger selectedIndex);
+typedef void(^cancelBlock)();
+
 @interface ZYUIAlertView()
 
 @end
