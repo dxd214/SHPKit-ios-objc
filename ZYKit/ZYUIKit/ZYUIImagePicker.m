@@ -28,13 +28,13 @@ typedef void(^SuccessBlock)(UIImage *image);
     return self;
 }
 
-+ (id)sharedHelper {
-    static ZYUIImagePicker *_sharedHelper = nil;
++ (id)sharedPicker {
+    static ZYUIImagePicker *_sharedPicker = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedHelper = [[self alloc] init];
+        _sharedPicker = [[self alloc] init];
     });
-    return _sharedHelper;
+    return _sharedPicker;
 }
 
 + (void)showImagePickerOfType:(ZYUIImagePickerType)type fromViewController:(UIViewController *)viewController success:(void (^)(UIImage *))success{
@@ -57,7 +57,7 @@ typedef void(^SuccessBlock)(UIImage *image);
                       success:(void (^)(UIImage *))success
                   autoDismiss:(BOOL)autoDismiss
                  allowEditing:(BOOL)allowEditing{
-    ZYUIImagePicker *sharedHelper = [self sharedHelper];
+    ZYUIImagePicker *sharedHelper = [self sharedPicker];
     sharedHelper.successBlock = ^(UIImage *image){
         success(image);
     };
@@ -65,7 +65,7 @@ typedef void(^SuccessBlock)(UIImage *image);
     [sharedHelper.pickerController setSourceType:type == ZYUIImagePickerTypeCamera?UIImagePickerControllerSourceTypeCamera:UIImagePickerControllerSourceTypePhotoLibrary];
     sharedHelper.autoDismiss = autoDismiss;
     [sharedHelper.pickerController setAllowsEditing:allowEditing];
-    [sharedHelper.pickerController setDelegate:[self sharedHelper]];
+    [sharedHelper.pickerController setDelegate:[self sharedPicker]];
     [viewController presentViewController:sharedHelper.pickerController animated:YES completion:NULL];
 }
 
