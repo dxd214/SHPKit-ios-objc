@@ -12,3 +12,4 @@
 #import "UIViewController+ZYTools.h"
 #import "UIImage+ZYTools.h"
 #import "ZYUIImagePicker.h"
+#import "ZYUIAlertView.h"

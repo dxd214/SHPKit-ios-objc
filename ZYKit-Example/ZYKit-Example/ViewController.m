@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZYUIKit.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)alertViewButtonPressed:(id)sender {
+    [ZYUIAlertView showAlertViewWithText:@"hi"];
+//    [ZYUIAlertView showAlertViewWithText:@"hi" buttonTitles:@[@"你好", @"hi"] completionBlock:^(NSInteger selectedIndex) {
+//        NSLog(@"%zd", selectedIndex);
+//    }];
 }
 
 @end

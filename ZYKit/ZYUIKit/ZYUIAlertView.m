@@ -28,23 +28,26 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText{
-    [self showAlertViewWithText:alertText completionBlock:nil];
+    [self showAlertViewWithText:alertText
+                completionBlock:^(){
+                }];
 }
 
 
 + (void)showAlertViewWithText:(NSString *)alertText completionBlock:(void (^)())completionBlock{
-    [self showAlertViewWithText:alertText buttonTitles:@[@"确定"] completionBlock:^(NSInteger selectedIndex) {
-        completionBlock();
-    }];
+    [self showAlertViewWithText:alertText
+                   buttonTitles:@[@"确定"]
+                completionBlock:^(NSInteger selectedIndex) {
+                    completionBlock();
+                }];
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
     [self showAlertViewWithText:alertText
                    buttonTitles:buttonTitles
                 withCancelTitle:nil
-                completionBlock:^(NSInteger selectedIndex) {
-                    completionBlock(selectedIndex);
-                } cancelBlock:nil];
+                completionBlock:completionBlock
+                    cancelBlock:nil];
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
@@ -75,7 +78,11 @@ typedef void(^CancelBlock)();
 #pragma mark - UIAlertView delegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
+    self.completionBlock(buttonIndex);
+}
+
+- (void)alertViewCancel:(UIAlertView *)alertView{
+    self.cancelBlock();
 }
 
 @end
