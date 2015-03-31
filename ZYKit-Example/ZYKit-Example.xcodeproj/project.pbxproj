@@ -19,7 +19,7 @@
 		08B279B81ACAC3A600730D0E /* UIImage+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AD1ACAC3A600730D0E /* UIImage+ZYTools.m */; };
 		08B279B91ACAC3A600730D0E /* UIViewController+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */; };
 		08B279BA1ACAC3A600730D0E /* UIWindow+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */; };
-		08B279BB1ACAC3A600730D0E /* ZYUIImagePickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B31ACAC3A600730D0E /* ZYUIImagePickerHelper.m */; };
+		08B279BB1ACAC3A600730D0E /* ZYUIImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,8 @@
 		08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZYTools.m"; sourceTree = "<group>"; };
 		08B279B01ACAC3A600730D0E /* UIWindow+ZYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ZYTools.h"; sourceTree = "<group>"; };
 		08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ZYTools.m"; sourceTree = "<group>"; };
-		08B279B21ACAC3A600730D0E /* ZYUIImagePickerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIImagePickerHelper.h; sourceTree = "<group>"; };
-		08B279B31ACAC3A600730D0E /* ZYUIImagePickerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUIImagePickerHelper.m; sourceTree = "<group>"; };
+		08B279B21ACAC3A600730D0E /* ZYUIImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIImagePicker.h; sourceTree = "<group>"; };
+		08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUIImagePicker.m; sourceTree = "<group>"; };
 		08B279B41ACAC3A600730D0E /* ZYUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,10 +154,10 @@
 		08B279A21ACAC3A600730D0E /* ZYFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				08B279A51ACAC3A600730D0E /* ZYDeviceHelper.h */,
-				08B279A61ACAC3A600730D0E /* ZYDeviceHelper.m */,
 				08B279A71ACAC3A600730D0E /* ZYFoundation.h */,
 				08B279A81ACAC3A600730D0E /* ZYTools.h */,
+				08B279A51ACAC3A600730D0E /* ZYDeviceHelper.h */,
+				08B279A61ACAC3A600730D0E /* ZYDeviceHelper.m */,
 				08B279A91ACAC3A600730D0E /* ZYVersionHelper.h */,
 				08B279AA1ACAC3A600730D0E /* ZYVersionHelper.m */,
 			);
@@ -167,15 +167,15 @@
 		08B279AB1ACAC3A600730D0E /* ZYUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				08B279B41ACAC3A600730D0E /* ZYUIKit.h */,
 				08B279AC1ACAC3A600730D0E /* UIImage+ZYTools.h */,
 				08B279AD1ACAC3A600730D0E /* UIImage+ZYTools.m */,
 				08B279AE1ACAC3A600730D0E /* UIViewController+ZYTools.h */,
 				08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */,
 				08B279B01ACAC3A600730D0E /* UIWindow+ZYTools.h */,
 				08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */,
-				08B279B21ACAC3A600730D0E /* ZYUIImagePickerHelper.h */,
-				08B279B31ACAC3A600730D0E /* ZYUIImagePickerHelper.m */,
-				08B279B41ACAC3A600730D0E /* ZYUIKit.h */,
+				08B279B21ACAC3A600730D0E /* ZYUIImagePicker.h */,
+				08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */,
 			);
 			path = ZYUIKit;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			files = (
 				08B279B81ACAC3A600730D0E /* UIImage+ZYTools.m in Sources */,
 				08B279B91ACAC3A600730D0E /* UIViewController+ZYTools.m in Sources */,
-				08B279BB1ACAC3A600730D0E /* ZYUIImagePickerHelper.m in Sources */,
+				08B279BB1ACAC3A600730D0E /* ZYUIImagePicker.m in Sources */,
 				08B279841ACAC38E00730D0E /* ViewController.m in Sources */,
 				08B279B61ACAC3A600730D0E /* ZYDeviceHelper.m in Sources */,
 				08B279811ACAC38E00730D0E /* AppDelegate.m in Sources */,

@@ -14,7 +14,7 @@ typedef enum{
     ZYUIImagePickerTypePhoto,
 }ZYUIImagePickerType;
 
-@interface ZYUIImagePickerHelper : NSObject
+@interface ZYUIImagePicker : NSObject
 
 + (void)showImagePickerOfType:(ZYUIImagePickerType)type
            fromViewController:(UIViewController *)viewController

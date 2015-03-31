@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import "ZYUIImagePickerHelper.h"
+#import "ZYUIImagePicker.h"
 
 typedef void(^SuccessBlock)(UIImage *image);
 
-@interface ZYUIImagePickerHelper() <UIImagePickerControllerDelegate>
+@interface ZYUIImagePicker() <UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) SuccessBlock successBlock;
 @property (strong, nonatomic) UIImagePickerController *pickerController;
@@ -18,7 +18,7 @@ typedef void(^SuccessBlock)(UIImage *image);
 @property (assign, nonatomic) BOOL allowEditing; //default: YES
 @end
 
-@implementation ZYUIImagePickerHelper
+@implementation ZYUIImagePicker
 
 - (id)init{
     self = [super init];
@@ -29,7 +29,7 @@ typedef void(^SuccessBlock)(UIImage *image);
 }
 
 + (id)sharedHelper {
-    static ZYUIImagePickerHelper *_sharedHelper = nil;
+    static ZYUIImagePicker *_sharedHelper = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedHelper = [[self alloc] init];
@@ -57,7 +57,7 @@ typedef void(^SuccessBlock)(UIImage *image);
                       success:(void (^)(UIImage *))success
                   autoDismiss:(BOOL)autoDismiss
                  allowEditing:(BOOL)allowEditing{
-    ZYUIImagePickerHelper *sharedHelper = [self sharedHelper];
+    ZYUIImagePicker *sharedHelper = [self sharedHelper];
     sharedHelper.successBlock = ^(UIImage *image){
         success(image);
     };
