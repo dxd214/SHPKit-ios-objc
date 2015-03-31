@@ -38,7 +38,12 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
-    
+    [self showAlertViewWithText:alertText
+                   buttonTitles:buttonTitles
+                withCancelTitle:nil
+                completionBlock:^(NSInteger selectedIndex) {
+                    completionBlock(selectedIndex);
+                } cancelBlock:nil];
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
@@ -49,7 +54,13 @@ typedef void(^CancelBlock)();
     sharedAlertView.cancelBlock = ^(){
         cancelBlock();
     };
-    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:alertText
+                                                       delegate:sharedAlertView
+                                              cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil];
+    if (cancelTitle.length){
+        
+    }
 }
 
 @end
