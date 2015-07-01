@@ -18,7 +18,7 @@
 /**
  * 显示一个文字提示，只包含默认的确定按钮，自定义标题
  */
-+ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText;
+//+ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText;
 
 /**
  * 显示一个文字提示，包含默认的确定按钮，通过completionBlock回调点击事件

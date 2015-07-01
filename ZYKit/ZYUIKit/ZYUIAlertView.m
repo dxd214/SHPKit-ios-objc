@@ -69,7 +69,11 @@ typedef void(^CancelBlock)();
 + (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
     ZYUIAlertView *sharedAlertView = [self sharedAlertView];
     sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
-        completionBlock(selectedIndex);
+        if (selectedIndex >= buttonTitles.count){
+            cancelBlock();
+        }else{
+            completionBlock(selectedIndex);
+        }
     };
     sharedAlertView.cancelBlock = ^(){
         cancelBlock();
