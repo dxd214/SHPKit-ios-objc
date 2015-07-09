@@ -8,6 +8,10 @@
 
 #import "SHPUIAlertView.h"
 
+static NSString *const kDefaultAlertTitle = @"提示";
+static NSString *const kDefaultAlertConfirmButtonTitle = @"确定";
+
+
 typedef void(^CompletionBlock)(NSInteger selectedIndex);
 typedef void(^CancelBlock)();
 
@@ -28,28 +32,27 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText{
-    [self showAlertViewWithTitle:@"提示" Text:alertText];
+    [self showAlertViewWithTitle:kDefaultAlertTitle Text:alertText];
 }
 
-+ (void)showAlertViewWithTitle:(NSString *)title Text:(NSString *)alertText{
-    [self showAlertViewWithTitle:title
++ (void)showAlertViewWithTitle:(NSString *)alertTitle Text:(NSString *)alertText{
+    [self showAlertViewWithTitle:alertTitle
                             text:alertText
                  completionBlock:^(NSInteger selectedIndex) {
-                     
                  }];
 }
 
-+ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText completionBlock:(void (^)())completionBlock{
-    [self showAlertViewWithTitle:title
++ (void)showAlertViewWithTitle:(NSString *)alertTitle text:(NSString *)alertText completionBlock:(void (^)())completionBlock{
+    [self showAlertViewWithTitle:alertTitle
                             text:alertText
-                    buttonTitles:@[@"确定"]
+                    buttonTitles:@[kDefaultAlertConfirmButtonTitle]
                  completionBlock:^(NSInteger selectedIndex) {
                      completionBlock();
                  }];
 }
 
-+ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
-    [self showAlertViewWithTitle:title
++ (void)showAlertViewWithTitle:(NSString *)alertTitle text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles completionBlock:(void (^)(NSInteger))completionBlock{
+    [self showAlertViewWithTitle:alertTitle
                             text:alertText
                     buttonTitles:buttonTitles
                  withCancelTitle:nil
@@ -59,7 +62,7 @@ typedef void(^CancelBlock)();
     
 }
 
-+ (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
++ (void)showAlertViewWithTitle:(NSString *)alertTitle text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
     SHPUIAlertView *sharedAlertView = [self sharedAlertView];
     sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
         if (selectedIndex >= buttonTitles.count){
@@ -71,7 +74,7 @@ typedef void(^CancelBlock)();
     sharedAlertView.cancelBlock = ^(){
         cancelBlock();
     };
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:alertTitle
                                                         message:alertText
                                                        delegate:sharedAlertView
                                               cancelButtonTitle:nil

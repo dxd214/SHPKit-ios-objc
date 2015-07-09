@@ -9,10 +9,23 @@
 #import "SHPUIKit.h"
 
 @interface UIWindow (SHPTools)
-//instance method
+
+/**
+ * 获取最上层的UIViewController
+ * @return topViewController 最上层的UIViewController
+ */
 - (UIViewController *)topViewController;
-//class method
+
+/**
+ * 获取最上层的UIViewController
+ * @return topViewController 最上层的UIViewController
+ */
 + (UIViewController *)topViewController;
+
+/**
+ * 获取当前的UIWindow
+ * @return currentWindow 当前使用的UIWindow
+ */
 + (UIWindow *)currentWindow;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "SHPDeviceHelper.h"
 
-#define kApplicationUUIDKey @"APPLICATION_UUID"
+static NSString *const kApplicationUUIDKey = @"APPLICATION_UUID";
 
 @implementation SHPDeviceHelper
 
