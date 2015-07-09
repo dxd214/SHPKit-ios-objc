@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ZYKit-Example.xcodeproj">
+      location = "self:SHPKit-Example.xcodeproj">
    </FileRef>
 </Workspace>

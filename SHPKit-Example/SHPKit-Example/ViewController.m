@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  ZYKit-Example
+//  SHPKit-Example
 //
-//  Created by 刘子洋 on 15/3/31.
-//  Copyright (c) 2015年 刘子洋. All rights reserved.
+//  Created by Ziyang Liu on 15/7/9.
+//  Copyright (c) 2015年 Ziyang Liu. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -23,12 +23,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)alertViewButtonPressed:(id)sender {
-    [SHPUIAlertView showAlertViewWithText:@"hi"];
-//    [SHPUIAlertView showAlertViewWithText:@"hi" buttonTitles:@[@"你好", @"hi"] completionBlock:^(NSInteger selectedIndex) {
-//        NSLog(@"%zd", selectedIndex);
-//    }];
 }
 
 @end
