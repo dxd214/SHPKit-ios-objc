@@ -14,5 +14,3 @@
 --UIImage+SHPTools.h/m  
 --UIViewController+SHPTools.h/m  
 --UIWindow+SHPTools.h/m  
-## 已知问题
-- 使用两个字母作为前缀可能会导致与将来的Cocoa框架前缀冲突，后面会改为三个字母前缀。  
