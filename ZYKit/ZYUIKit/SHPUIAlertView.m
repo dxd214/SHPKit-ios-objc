@@ -1,25 +1,25 @@
 //
-//  ZYUIAlertView.m
+//  SHPUIAlertView.m
 //  ZYKit-Example
 //
 //  Created by 刘子洋 on 15/3/31.
 //  Copyright (c) 2015年 刘子洋. All rights reserved.
 //
 
-#import "ZYUIAlertView.h"
+#import "SHPUIAlertView.h"
 
 typedef void(^CompletionBlock)(NSInteger selectedIndex);
 typedef void(^CancelBlock)();
 
-@interface ZYUIAlertView() <UIAlertViewDelegate>
+@interface SHPUIAlertView () <UIAlertViewDelegate>
 @property (strong, nonatomic) CompletionBlock completionBlock;
 @property (strong, nonatomic) CancelBlock cancelBlock;
 @end
 
-@implementation ZYUIAlertView
+@implementation SHPUIAlertView
 
 + (id)sharedAlertView {
-    static ZYUIAlertView *_sharedAlertView = nil;
+    static SHPUIAlertView *_sharedAlertView = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedAlertView = [[self alloc] init];
@@ -28,9 +28,7 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithText:(NSString *)alertText{
-//    [self showAlertViewWithText:alertText
-//                completionBlock:^(){
-//                }];
+    [self showAlertViewWithTitle:@"提示" Text:alertText];
 }
 
 + (void)showAlertViewWithTitle:(NSString *)title Text:(NSString *)alertText{
@@ -42,11 +40,6 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText completionBlock:(void (^)())completionBlock{
-//    [self showAlertViewWithText:alertText
-//                   buttonTitles:@[@"确定"]
-//                completionBlock:^(NSInteger selectedIndex) {
-//                    completionBlock();
-//                }];
     [self showAlertViewWithTitle:title
                             text:alertText
                     buttonTitles:@[@"确定"]
@@ -67,7 +60,7 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithTitle:(NSString *)title text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
-    ZYUIAlertView *sharedAlertView = [self sharedAlertView];
+    SHPUIAlertView *sharedAlertView = [self sharedAlertView];
     sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
         if (selectedIndex >= buttonTitles.count){
             cancelBlock();

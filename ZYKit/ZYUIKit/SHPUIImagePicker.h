@@ -6,25 +6,25 @@
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import "ZYUIKit.h"
+#import "SHPUIKit.h"
 
 typedef enum{
-    ZYUIImagePickerTypeCamera,
-    ZYUIImagePickerTypePhoto,
-}ZYUIImagePickerType;
+    SHPUIImagePickerTypeCamera,
+    SHPUIImagePickerTypePhoto,
+} SHPUIImagePickerType;
 
-@interface ZYUIImagePicker : NSObject
+@interface SHPUIImagePicker : NSObject
 
-+ (void)showImagePickerOfType:(ZYUIImagePickerType)type
++ (void)showImagePickerOfType:(SHPUIImagePickerType)type
            fromViewController:(UIViewController *)viewController
                       success:(void(^)(UIImage *image))success;
 
-+ (void)showImagePickerOfType:(ZYUIImagePickerType)type
++ (void)showImagePickerOfType:(SHPUIImagePickerType)type
            fromViewController:(UIViewController *)viewController
                       success:(void (^)(UIImage *))success
                   autoDismiss:(BOOL)autoDismiss;
 
-+ (void)showImagePickerOfType:(ZYUIImagePickerType)type
++ (void)showImagePickerOfType:(SHPUIImagePickerType)type
            fromViewController:(UIViewController *)viewController
                       success:(void (^)(UIImage *))success
                   autoDismiss:(BOOL)autoDismiss

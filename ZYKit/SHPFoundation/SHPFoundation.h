@@ -1,5 +1,5 @@
 //
-//  ZYFoundation.h
+//  SHPFoundation.h
 //  
 //
 //  Created by LiuZiyang on 15/1/21.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ZYTools.h"
-#import "ZYDeviceHelper.h"
+#import "SHPMacros.h"
+#import "SHPDeviceHelper.h"
 #import "ZYVersionHelper.h"

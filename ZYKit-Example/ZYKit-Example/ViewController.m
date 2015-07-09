@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ZYUIKit.h"
+#import "SHPUIKit.h"
 
 @interface ViewController ()
 
@@ -25,8 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)alertViewButtonPressed:(id)sender {
-    [ZYUIAlertView showAlertViewWithText:@"hi"];
-//    [ZYUIAlertView showAlertViewWithText:@"hi" buttonTitles:@[@"你好", @"hi"] completionBlock:^(NSInteger selectedIndex) {
+    [SHPUIAlertView showAlertViewWithText:@"hi"];
+//    [SHPUIAlertView showAlertViewWithText:@"hi" buttonTitles:@[@"你好", @"hi"] completionBlock:^(NSInteger selectedIndex) {
 //        NSLog(@"%zd", selectedIndex);
 //    }];
 }

@@ -1,14 +1,14 @@
 //
-//  UIWindow+ZYTools.m
+//  UIWindow+SHPTools.m
 //  
 //
 //  Created by LiuZiyang on 15/1/21.
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import "UIWindow+ZYTools.h"
+#import "UIWindow+SHPTools.h"
 
-@implementation UIWindow (ZYTools)
+@implementation UIWindow (SHPTools)
 
 #pragma mark - private
 

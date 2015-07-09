@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import "ZYFoundation.h"
+#import "SHPFoundation.h"
 
 @interface ZYVersionHelper : NSObject
 

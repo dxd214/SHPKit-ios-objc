@@ -1,14 +1,14 @@
 //
-//  ZYUIAlertView.h
+//  SHPUIAlertView.h
 //  ZYKit-Example
 //
 //  Created by 刘子洋 on 15/3/31.
 //  Copyright (c) 2015年 刘子洋. All rights reserved.
 //
 
-#import "ZYUIKit.h"
+#import "SHPUIKit.h"
 
-@interface ZYUIAlertView : NSObject
+@interface SHPUIAlertView : NSObject
 
 /**
  * 显示一个文字提示，只包含默认的确定按钮

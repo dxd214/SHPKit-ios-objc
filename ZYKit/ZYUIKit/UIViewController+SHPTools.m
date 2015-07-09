@@ -1,14 +1,14 @@
 //
-//  UIViewController+ZYTools.m
+//  UIViewController+SHPTools.m
 //  
 //
 //  Created by LiuZiyang on 15/1/21.
 //  Copyright (c) 2015年 Yicheng Tech. All rights reserved.
 //
 
-#import "UIViewController+ZYTools.h"
+#import "UIViewController+SHPTools.h"
 
-@implementation UIViewController (ZYTools)
+@implementation UIViewController (SHPTools)
 
 - (void)pop{
     if (!self.navigationController){

@@ -14,13 +14,13 @@
 		08B279891ACAC38E00730D0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B279881ACAC38E00730D0E /* Images.xcassets */; };
 		08B2798C1ACAC38E00730D0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2798A1ACAC38E00730D0E /* LaunchScreen.xib */; };
 		08B279981ACAC38F00730D0E /* ZYKit_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279971ACAC38F00730D0E /* ZYKit_ExampleTests.m */; };
-		08B279B61ACAC3A600730D0E /* ZYDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279A61ACAC3A600730D0E /* ZYDeviceHelper.m */; };
+		08B279B61ACAC3A600730D0E /* SHPDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279A61ACAC3A600730D0E /* SHPDeviceHelper.m */; };
 		08B279B71ACAC3A600730D0E /* ZYVersionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AA1ACAC3A600730D0E /* ZYVersionHelper.m */; };
-		08B279B81ACAC3A600730D0E /* UIImage+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AD1ACAC3A600730D0E /* UIImage+ZYTools.m */; };
-		08B279B91ACAC3A600730D0E /* UIViewController+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */; };
-		08B279BA1ACAC3A600730D0E /* UIWindow+ZYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */; };
-		08B279BB1ACAC3A600730D0E /* ZYUIImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */; };
-		08B279BE1ACAC5A200730D0E /* ZYUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279BD1ACAC5A200730D0E /* ZYUIAlertView.m */; };
+		08B279B81ACAC3A600730D0E /* UIImage+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AD1ACAC3A600730D0E /* UIImage+SHPTools.m */; };
+		08B279B91ACAC3A600730D0E /* UIViewController+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279AF1ACAC3A600730D0E /* UIViewController+SHPTools.m */; };
+		08B279BA1ACAC3A600730D0E /* UIWindow+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B11ACAC3A600730D0E /* UIWindow+SHPTools.m */; };
+		08B279BB1ACAC3A600730D0E /* SHPUIImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279B31ACAC3A600730D0E /* SHPUIImagePicker.m */; };
+		08B279BE1ACAC5A200730D0E /* SHPUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B279BD1ACAC5A200730D0E /* SHPUIAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,23 +47,23 @@
 		08B279911ACAC38F00730D0E /* ZYKit-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZYKit-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B279961ACAC38F00730D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B279971ACAC38F00730D0E /* ZYKit_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYKit_ExampleTests.m; sourceTree = "<group>"; };
-		08B279A51ACAC3A600730D0E /* ZYDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDeviceHelper.h; sourceTree = "<group>"; };
-		08B279A61ACAC3A600730D0E /* ZYDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDeviceHelper.m; sourceTree = "<group>"; };
-		08B279A71ACAC3A600730D0E /* ZYFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFoundation.h; sourceTree = "<group>"; };
-		08B279A81ACAC3A600730D0E /* ZYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTools.h; sourceTree = "<group>"; };
+		08B279A51ACAC3A600730D0E /* SHPDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPDeviceHelper.h; sourceTree = "<group>"; };
+		08B279A61ACAC3A600730D0E /* SHPDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPDeviceHelper.m; sourceTree = "<group>"; };
+		08B279A71ACAC3A600730D0E /* SHPFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPFoundation.h; sourceTree = "<group>"; };
+		08B279A81ACAC3A600730D0E /* SHPMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPMacros.h; sourceTree = "<group>"; };
 		08B279A91ACAC3A600730D0E /* ZYVersionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYVersionHelper.h; sourceTree = "<group>"; };
 		08B279AA1ACAC3A600730D0E /* ZYVersionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYVersionHelper.m; sourceTree = "<group>"; };
-		08B279AC1ACAC3A600730D0E /* UIImage+ZYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYTools.h"; sourceTree = "<group>"; };
-		08B279AD1ACAC3A600730D0E /* UIImage+ZYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYTools.m"; sourceTree = "<group>"; };
-		08B279AE1ACAC3A600730D0E /* UIViewController+ZYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZYTools.h"; sourceTree = "<group>"; };
-		08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZYTools.m"; sourceTree = "<group>"; };
-		08B279B01ACAC3A600730D0E /* UIWindow+ZYTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ZYTools.h"; sourceTree = "<group>"; };
-		08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ZYTools.m"; sourceTree = "<group>"; };
-		08B279B21ACAC3A600730D0E /* ZYUIImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIImagePicker.h; sourceTree = "<group>"; };
-		08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUIImagePicker.m; sourceTree = "<group>"; };
-		08B279B41ACAC3A600730D0E /* ZYUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIKit.h; sourceTree = "<group>"; };
-		08B279BC1ACAC5A200730D0E /* ZYUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUIAlertView.h; sourceTree = "<group>"; };
-		08B279BD1ACAC5A200730D0E /* ZYUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUIAlertView.m; sourceTree = "<group>"; };
+		08B279AC1ACAC3A600730D0E /* UIImage+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHPTools.h"; sourceTree = "<group>"; };
+		08B279AD1ACAC3A600730D0E /* UIImage+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHPTools.m"; sourceTree = "<group>"; };
+		08B279AE1ACAC3A600730D0E /* UIViewController+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHPTools.h"; sourceTree = "<group>"; };
+		08B279AF1ACAC3A600730D0E /* UIViewController+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHPTools.m"; sourceTree = "<group>"; };
+		08B279B01ACAC3A600730D0E /* UIWindow+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SHPTools.h"; sourceTree = "<group>"; };
+		08B279B11ACAC3A600730D0E /* UIWindow+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SHPTools.m"; sourceTree = "<group>"; };
+		08B279B21ACAC3A600730D0E /* SHPUIImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIImagePicker.h; sourceTree = "<group>"; };
+		08B279B31ACAC3A600730D0E /* SHPUIImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPUIImagePicker.m; sourceTree = "<group>"; };
+		08B279B41ACAC3A600730D0E /* SHPUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIKit.h; sourceTree = "<group>"; };
+		08B279BC1ACAC5A200730D0E /* SHPUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIAlertView.h; sourceTree = "<group>"; };
+		08B279BD1ACAC5A200730D0E /* SHPUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPUIAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,40 +147,40 @@
 		08B279A11ACAC3A600730D0E /* ZYKit */ = {
 			isa = PBXGroup;
 			children = (
-				08B279A21ACAC3A600730D0E /* ZYFoundation */,
+				08B279A21ACAC3A600730D0E /* SHPFoundation */,
 				08B279AB1ACAC3A600730D0E /* ZYUIKit */,
 			);
 			name = ZYKit;
 			path = ../ZYKit;
 			sourceTree = "<group>";
 		};
-		08B279A21ACAC3A600730D0E /* ZYFoundation */ = {
+		08B279A21ACAC3A600730D0E /* SHPFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				08B279A71ACAC3A600730D0E /* ZYFoundation.h */,
-				08B279A81ACAC3A600730D0E /* ZYTools.h */,
-				08B279A51ACAC3A600730D0E /* ZYDeviceHelper.h */,
-				08B279A61ACAC3A600730D0E /* ZYDeviceHelper.m */,
+				08B279A71ACAC3A600730D0E /* SHPFoundation.h */,
+				08B279A81ACAC3A600730D0E /* SHPMacros.h */,
+				08B279A51ACAC3A600730D0E /* SHPDeviceHelper.h */,
+				08B279A61ACAC3A600730D0E /* SHPDeviceHelper.m */,
 				08B279A91ACAC3A600730D0E /* ZYVersionHelper.h */,
 				08B279AA1ACAC3A600730D0E /* ZYVersionHelper.m */,
 			);
-			path = ZYFoundation;
+			path = SHPFoundation;
 			sourceTree = "<group>";
 		};
 		08B279AB1ACAC3A600730D0E /* ZYUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				08B279B41ACAC3A600730D0E /* ZYUIKit.h */,
-				08B279AC1ACAC3A600730D0E /* UIImage+ZYTools.h */,
-				08B279AD1ACAC3A600730D0E /* UIImage+ZYTools.m */,
-				08B279AE1ACAC3A600730D0E /* UIViewController+ZYTools.h */,
-				08B279AF1ACAC3A600730D0E /* UIViewController+ZYTools.m */,
-				08B279B01ACAC3A600730D0E /* UIWindow+ZYTools.h */,
-				08B279B11ACAC3A600730D0E /* UIWindow+ZYTools.m */,
-				08B279B21ACAC3A600730D0E /* ZYUIImagePicker.h */,
-				08B279B31ACAC3A600730D0E /* ZYUIImagePicker.m */,
-				08B279BC1ACAC5A200730D0E /* ZYUIAlertView.h */,
-				08B279BD1ACAC5A200730D0E /* ZYUIAlertView.m */,
+				08B279B41ACAC3A600730D0E /* SHPUIKit.h */,
+				08B279AC1ACAC3A600730D0E /* UIImage+SHPTools.h */,
+				08B279AD1ACAC3A600730D0E /* UIImage+SHPTools.m */,
+				08B279AE1ACAC3A600730D0E /* UIViewController+SHPTools.h */,
+				08B279AF1ACAC3A600730D0E /* UIViewController+SHPTools.m */,
+				08B279B01ACAC3A600730D0E /* UIWindow+SHPTools.h */,
+				08B279B11ACAC3A600730D0E /* UIWindow+SHPTools.m */,
+				08B279B21ACAC3A600730D0E /* SHPUIImagePicker.h */,
+				08B279B31ACAC3A600730D0E /* SHPUIImagePicker.m */,
+				08B279BC1ACAC5A200730D0E /* SHPUIAlertView.h */,
+				08B279BD1ACAC5A200730D0E /* SHPUIAlertView.m */,
 			);
 			path = ZYUIKit;
 			sourceTree = "<group>";
@@ -229,6 +229,7 @@
 		08B279701ACAC38E00730D0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SHP;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "刘子洋";
 				TargetAttributes = {
@@ -285,16 +286,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B279BE1ACAC5A200730D0E /* ZYUIAlertView.m in Sources */,
-				08B279B81ACAC3A600730D0E /* UIImage+ZYTools.m in Sources */,
-				08B279B91ACAC3A600730D0E /* UIViewController+ZYTools.m in Sources */,
-				08B279BB1ACAC3A600730D0E /* ZYUIImagePicker.m in Sources */,
+				08B279BE1ACAC5A200730D0E /* SHPUIAlertView.m in Sources */,
+				08B279B81ACAC3A600730D0E /* UIImage+SHPTools.m in Sources */,
+				08B279B91ACAC3A600730D0E /* UIViewController+SHPTools.m in Sources */,
+				08B279BB1ACAC3A600730D0E /* SHPUIImagePicker.m in Sources */,
 				08B279841ACAC38E00730D0E /* ViewController.m in Sources */,
-				08B279B61ACAC3A600730D0E /* ZYDeviceHelper.m in Sources */,
+				08B279B61ACAC3A600730D0E /* SHPDeviceHelper.m in Sources */,
 				08B279811ACAC38E00730D0E /* AppDelegate.m in Sources */,
 				08B2797E1ACAC38E00730D0E /* main.m in Sources */,
 				08B279B71ACAC3A600730D0E /* ZYVersionHelper.m in Sources */,
-				08B279BA1ACAC3A600730D0E /* UIWindow+ZYTools.m in Sources */,
+				08B279BA1ACAC3A600730D0E /* UIWindow+SHPTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +488,7 @@
 				08B2799D1ACAC38F00730D0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08B2799E1ACAC38F00730D0E /* Build configuration list for PBXNativeTarget "ZYKit-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +497,7 @@
 				08B279A01ACAC38F00730D0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

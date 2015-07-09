@@ -1,16 +1,16 @@
 //
-//  UWUUIDHelper.m
+//  SHPDeviceHelper.m
 //  
 //
 //  Created by LiuZiyang on 14/12/3.
 //  Copyright (c) 2014年 Yicheng Tech. All rights reserved.
 //
 
-#import "ZYDeviceHelper.h"
+#import "SHPDeviceHelper.h"
 
 #define kApplicationUUIDKey @"APPLICATION_UUID"
 
-@implementation ZYDeviceHelper
+@implementation SHPDeviceHelper
 
 + (NSString *)uuid{
     NSString *UUID = [[NSUserDefaults standardUserDefaults] objectForKey:kApplicationUUIDKey];
