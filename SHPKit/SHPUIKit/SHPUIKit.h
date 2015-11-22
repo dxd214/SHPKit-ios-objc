@@ -11,5 +11,5 @@
 #import "UIWindow+SHPTools.h"
 #import "UIViewController+SHPTools.h"
 #import "UIImage+SHPTools.h"
-#import "SHPUIImagePicker.h"
+#import "SHPImagePickerController.h"
 #import "SHPUIAlertView.h"
