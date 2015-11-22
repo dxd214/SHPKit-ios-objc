@@ -1,16 +1,30 @@
 # SHPKit
 ## 简介
-对Cocoa的自用ObjC封装，包括常用宏和方法，一些控件的block封装等。还在起步阶段。  
+对 Cocoa 的自用封装，包括常用宏和方法，一些控件的 block 封装等，使用 Objective-C 语言。还在起步阶段。  
+## !!重要说明!!
+里面的很多类已被我逐步单独开了 Repo，完成后不会继续维护此项目。以下是传送门：
+
+[SHPImagePickerController](https://github.com/tzuyangliu/SHPImagePickerController)
 ## 文件目录  
--SHPFoundation  
---SHPFoundation.h  
---SHPTools.h  
---SHPVersionHelper.h/m  
---SHPDeviceHelper.h/m  
--SHPUIKit  
---SHPUIKit.h  
---SHPUIAlertView.h/m  
---SHPUIImagePicker.h/m  
---UIImage+SHPTools.h/m  
---UIViewController+SHPTools.h/m  
---UIWindow+SHPTools.h/m  
+```
+.
+├── SHPFoundation
+│   ├── SHPDeviceHelper.h
+│   ├── SHPDeviceHelper.m
+│   ├── SHPFoundation.h
+│   ├── SHPMacros.h
+│   ├── ZYVersionHelper.h
+│   └── ZYVersionHelper.m
+└── SHPUIKit
+    ├── SHPUIAlertView.h
+    ├── SHPUIAlertView.m
+    ├── SHPUIImagePicker.h
+    ├── SHPUIImagePicker.m
+    ├── SHPUIKit.h
+    ├── UIImage+SHPTools.h
+    ├── UIImage+SHPTools.m
+    ├── UIViewController+SHPTools.h
+    ├── UIViewController+SHPTools.m
+    ├── UIWindow+SHPTools.h
+    └── UIWindow+SHPTools.m
+```
