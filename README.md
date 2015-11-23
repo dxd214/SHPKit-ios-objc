@@ -16,10 +16,10 @@
 │   ├── ZYVersionHelper.h
 │   └── ZYVersionHelper.m
 └── SHPUIKit
+    ├── SHPImagePickerController.h
+    ├── SHPImagePickerController.m
     ├── SHPUIAlertView.h
     ├── SHPUIAlertView.m
-    ├── SHPUIImagePicker.h
-    ├── SHPUIImagePicker.m
     ├── SHPUIKit.h
     ├── UIImage+SHPTools.h
     ├── UIImage+SHPTools.m
