@@ -5,6 +5,8 @@
 里面的很多类已被我逐步单独开了 Repo，完成后不会继续维护此项目。以下是传送门：
 
 [SHPImagePickerController](https://github.com/tzuyangliu/SHPImagePickerController)
+
+[SHPAlertView](https://github.com/tzuyangliu/SHPAlertView)
 ## 文件目录  
 ```
 .
@@ -16,10 +18,10 @@
 │   ├── ZYVersionHelper.h
 │   └── ZYVersionHelper.m
 └── SHPUIKit
-    ├── SHPUIAlertView.h
-    ├── SHPUIAlertView.m
-    ├── SHPUIImagePicker.h
-    ├── SHPUIImagePicker.m
+    ├── SHPAlertView.h
+    ├── SHPAlertView.m
+    ├── SHPImagePickerController.h
+    ├── SHPImagePickerController.m
     ├── SHPUIKit.h
     ├── UIImage+SHPTools.h
     ├── UIImage+SHPTools.m
