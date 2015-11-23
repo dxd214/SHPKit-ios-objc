@@ -1,12 +1,11 @@
 //
-//  SHPUIAlertView.m
-//  ZYKit-Example
+//  SHPAlertView.m
 //
 //  Created by 刘子洋 on 15/3/31.
 //  Copyright (c) 2015年 刘子洋. All rights reserved.
 //
 
-#import "SHPUIAlertView.h"
+#import "SHPAlertView.h"
 
 static NSString *const kDefaultAlertTitle = @"提示";
 static NSString *const kDefaultAlertConfirmButtonTitle = @"确定";
@@ -15,15 +14,15 @@ static NSString *const kDefaultAlertConfirmButtonTitle = @"确定";
 typedef void(^CompletionBlock)(NSInteger selectedIndex);
 typedef void(^CancelBlock)();
 
-@interface SHPUIAlertView () <UIAlertViewDelegate>
+@interface SHPAlertView () <UIAlertViewDelegate>
 @property (strong, nonatomic) CompletionBlock completionBlock;
 @property (strong, nonatomic) CancelBlock cancelBlock;
 @end
 
-@implementation SHPUIAlertView
+@implementation SHPAlertView
 
 + (id)sharedAlertView {
-    static SHPUIAlertView *_sharedAlertView = nil;
+    static SHPAlertView *_sharedAlertView = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedAlertView = [[self alloc] init];
@@ -63,7 +62,7 @@ typedef void(^CancelBlock)();
 }
 
 + (void)showAlertViewWithTitle:(NSString *)alertTitle text:(NSString *)alertText buttonTitles:(NSArray *)buttonTitles withCancelTitle:(NSString *)cancelTitle completionBlock:(void (^)(NSInteger))completionBlock cancelBlock:(void (^)())cancelBlock{
-    SHPUIAlertView *sharedAlertView = [self sharedAlertView];
+    SHPAlertView *sharedAlertView = [self sharedAlertView];
     sharedAlertView.completionBlock = ^(NSInteger selectedIndex){
         if (selectedIndex >= buttonTitles.count){
             cancelBlock();

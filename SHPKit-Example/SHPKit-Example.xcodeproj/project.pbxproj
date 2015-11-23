@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081C848C1C03AD6200D93C02 /* SHPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081C848B1C03AD6200D93C02 /* SHPAlertView.m */; };
 		087C04C01C024E7C00243FE8 /* SHPImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087C04BF1C024E7C00243FE8 /* SHPImagePickerController.m */; };
 		087C04C11C024E7C00243FE8 /* SHPImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087C04BF1C024E7C00243FE8 /* SHPImagePickerController.m */; };
 		328C5C871B4E9F5C00FF0009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5C861B4E9F5C00FF0009 /* main.m */; };
@@ -18,7 +19,6 @@
 		328C5CA11B4E9F5C00FF0009 /* SHPKit_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CA01B4E9F5C00FF0009 /* SHPKit_ExampleTests.m */; };
 		328C5CBE1B4E9F6700FF0009 /* SHPDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CAD1B4E9F6700FF0009 /* SHPDeviceHelper.m */; };
 		328C5CBF1B4E9F6700FF0009 /* ZYVersionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CB11B4E9F6700FF0009 /* ZYVersionHelper.m */; };
-		328C5CC01B4E9F6700FF0009 /* SHPUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CB41B4E9F6700FF0009 /* SHPUIAlertView.m */; };
 		328C5CC21B4E9F6700FF0009 /* UIImage+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CB91B4E9F6700FF0009 /* UIImage+SHPTools.m */; };
 		328C5CC31B4E9F6700FF0009 /* UIViewController+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CBB1B4E9F6700FF0009 /* UIViewController+SHPTools.m */; };
 		328C5CC41B4E9F6700FF0009 /* UIWindow+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CBD1B4E9F6700FF0009 /* UIWindow+SHPTools.m */; };
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081C848A1C03AD6200D93C02 /* SHPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPAlertView.h; sourceTree = "<group>"; };
+		081C848B1C03AD6200D93C02 /* SHPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPAlertView.m; sourceTree = "<group>"; };
 		087C04BE1C024E7C00243FE8 /* SHPImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPImagePickerController.h; sourceTree = "<group>"; };
 		087C04BF1C024E7C00243FE8 /* SHPImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPImagePickerController.m; sourceTree = "<group>"; };
 		328C5C811B4E9F5C00FF0009 /* SHPKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHPKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +58,6 @@
 		328C5CAF1B4E9F6700FF0009 /* SHPMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPMacros.h; sourceTree = "<group>"; };
 		328C5CB01B4E9F6700FF0009 /* ZYVersionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYVersionHelper.h; sourceTree = "<group>"; };
 		328C5CB11B4E9F6700FF0009 /* ZYVersionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYVersionHelper.m; sourceTree = "<group>"; };
-		328C5CB31B4E9F6700FF0009 /* SHPUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIAlertView.h; sourceTree = "<group>"; };
-		328C5CB41B4E9F6700FF0009 /* SHPUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPUIAlertView.m; sourceTree = "<group>"; };
 		328C5CB71B4E9F6700FF0009 /* SHPUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIKit.h; sourceTree = "<group>"; };
 		328C5CB81B4E9F6700FF0009 /* UIImage+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHPTools.h"; sourceTree = "<group>"; };
 		328C5CB91B4E9F6700FF0009 /* UIImage+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHPTools.m"; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 		328C5CB21B4E9F6700FF0009 /* SHPUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				328C5CB31B4E9F6700FF0009 /* SHPUIAlertView.h */,
-				328C5CB41B4E9F6700FF0009 /* SHPUIAlertView.m */,
+				081C848A1C03AD6200D93C02 /* SHPAlertView.h */,
+				081C848B1C03AD6200D93C02 /* SHPAlertView.m */,
 				087C04BE1C024E7C00243FE8 /* SHPImagePickerController.h */,
 				087C04BF1C024E7C00243FE8 /* SHPImagePickerController.m */,
 				328C5CB71B4E9F6700FF0009 /* SHPUIKit.h */,
@@ -288,12 +288,12 @@
 			files = (
 				328C5CBF1B4E9F6700FF0009 /* ZYVersionHelper.m in Sources */,
 				328C5CC31B4E9F6700FF0009 /* UIViewController+SHPTools.m in Sources */,
-				328C5CC01B4E9F6700FF0009 /* SHPUIAlertView.m in Sources */,
 				087C04C01C024E7C00243FE8 /* SHPImagePickerController.m in Sources */,
 				328C5C8D1B4E9F5C00FF0009 /* ViewController.m in Sources */,
 				328C5C8A1B4E9F5C00FF0009 /* AppDelegate.m in Sources */,
 				328C5CC21B4E9F6700FF0009 /* UIImage+SHPTools.m in Sources */,
 				328C5C871B4E9F5C00FF0009 /* main.m in Sources */,
+				081C848C1C03AD6200D93C02 /* SHPAlertView.m in Sources */,
 				328C5CBE1B4E9F6700FF0009 /* SHPDeviceHelper.m in Sources */,
 				328C5CC41B4E9F6700FF0009 /* UIWindow+SHPTools.m in Sources */,
 			);
