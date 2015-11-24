@@ -20,7 +20,6 @@
 		328C5CBE1B4E9F6700FF0009 /* SHPDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CAD1B4E9F6700FF0009 /* SHPDeviceHelper.m */; };
 		328C5CBF1B4E9F6700FF0009 /* ZYVersionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CB11B4E9F6700FF0009 /* ZYVersionHelper.m */; };
 		328C5CC21B4E9F6700FF0009 /* UIImage+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CB91B4E9F6700FF0009 /* UIImage+SHPTools.m */; };
-		328C5CC31B4E9F6700FF0009 /* UIViewController+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CBB1B4E9F6700FF0009 /* UIViewController+SHPTools.m */; };
 		328C5CC41B4E9F6700FF0009 /* UIWindow+SHPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C5CBD1B4E9F6700FF0009 /* UIWindow+SHPTools.m */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +60,6 @@
 		328C5CB71B4E9F6700FF0009 /* SHPUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPUIKit.h; sourceTree = "<group>"; };
 		328C5CB81B4E9F6700FF0009 /* UIImage+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHPTools.h"; sourceTree = "<group>"; };
 		328C5CB91B4E9F6700FF0009 /* UIImage+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHPTools.m"; sourceTree = "<group>"; };
-		328C5CBA1B4E9F6700FF0009 /* UIViewController+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHPTools.h"; sourceTree = "<group>"; };
-		328C5CBB1B4E9F6700FF0009 /* UIViewController+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHPTools.m"; sourceTree = "<group>"; };
 		328C5CBC1B4E9F6700FF0009 /* UIWindow+SHPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SHPTools.h"; sourceTree = "<group>"; };
 		328C5CBD1B4E9F6700FF0009 /* UIWindow+SHPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SHPTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,8 +175,6 @@
 				328C5CB71B4E9F6700FF0009 /* SHPUIKit.h */,
 				328C5CB81B4E9F6700FF0009 /* UIImage+SHPTools.h */,
 				328C5CB91B4E9F6700FF0009 /* UIImage+SHPTools.m */,
-				328C5CBA1B4E9F6700FF0009 /* UIViewController+SHPTools.h */,
-				328C5CBB1B4E9F6700FF0009 /* UIViewController+SHPTools.m */,
 				328C5CBC1B4E9F6700FF0009 /* UIWindow+SHPTools.h */,
 				328C5CBD1B4E9F6700FF0009 /* UIWindow+SHPTools.m */,
 			);
@@ -287,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				328C5CBF1B4E9F6700FF0009 /* ZYVersionHelper.m in Sources */,
-				328C5CC31B4E9F6700FF0009 /* UIViewController+SHPTools.m in Sources */,
 				087C04C01C024E7C00243FE8 /* SHPImagePickerController.m in Sources */,
 				328C5C8D1B4E9F5C00FF0009 /* ViewController.m in Sources */,
 				328C5C8A1B4E9F5C00FF0009 /* AppDelegate.m in Sources */,

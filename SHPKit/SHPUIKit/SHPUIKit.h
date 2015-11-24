@@ -9,7 +9,6 @@
 #import "SHPFoundation.h"
 
 #import "UIWindow+SHPTools.h"
-#import "UIViewController+SHPTools.h"
 #import "UIImage+SHPTools.h"
 #import "SHPImagePickerController.h"
 #import "SHPAlertView.h"
