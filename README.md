@@ -25,8 +25,6 @@
     ├── SHPUIKit.h
     ├── UIImage+SHPTools.h
     ├── UIImage+SHPTools.m
-    ├── UIViewController+SHPTools.h
-    ├── UIViewController+SHPTools.m
     ├── UIWindow+SHPTools.h
     └── UIWindow+SHPTools.m
 ```
